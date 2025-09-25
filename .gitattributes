@@ -1,2 +1,33 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+* text=auto eol=LF
+
+# --- Python ---
+*.py text diff=Python
+
+# --- JavaScript / React ---
+*.js text diff=JavaScript
+*.jsx text diff=JavaScript
+*.ts text diff=Typescript
+*.tsx text diff=Typescript
+
+# --- Web files ---
+*.css text
+*.scss text
+*.html text
+*.json text
+*.yml text
+*.yaml text
+*.md text
+*.txt text
+
+# --- Ignore diffs for binaries ---
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.mp4 binary
+*.mov binary
+*.exe binary
+*.dll binary
